@@ -1,0 +1,36 @@
+{
+    "printWidth": 120,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "semi": false,
+    "overrides": [
+        {
+            "files": [
+                "*.tsx",
+                "*.ts"
+            ],
+            "options": {
+                "parser": "typescript"
+            }
+        },
+        {
+            "files": "*.css",
+            "options": {
+                "parser": "css"
+            }
+        },
+        {
+            "files": "*.scss",
+            "options": {
+                "parser": "scss"
+            }
+        },
+        {
+            "files": "*.yml",
+            "options": {
+                "parser": "yaml",
+                "singleQuote": false
+            }
+        }
+    ]
+}
