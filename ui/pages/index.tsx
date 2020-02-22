@@ -1,13 +1,10 @@
-import React from 'react'
+import { memo } from 'react'
+import { NextPage } from 'next'
 
 interface Props {}
 
-const Index = (props: Props) => {
-    return (
-        <div>
-            Hello World
-        </div>
-    )
+const Index: NextPage<Props> = props => {
+    return <div>Hello World</div>
 }
 
-export default Index
+export default memo(Index)
