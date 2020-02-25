@@ -1,0 +1,16 @@
+@import '~bootstrap/scss/functions';
+@import 'variables';
+
+.navbar {
+    a.nav-link,
+    a.dropdown-item {
+        color: $nav-color;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    a.dropdown-item {
+    }
+}

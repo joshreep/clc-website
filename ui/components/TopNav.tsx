@@ -8,6 +8,8 @@ import Navbar from 'react-bootstrap/Navbar'
 
 import NavDropdown from './NavDropdown'
 
+import 'styles/_topNav.scss'
+
 const TopNav = () => {
     return (
         <Navbar bg="light">
