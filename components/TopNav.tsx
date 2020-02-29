@@ -12,8 +12,8 @@ import 'styles/_topNav.scss'
 
 const TopNav = () => {
     return (
-        <Navbar bg="light">
-            <Container>
+        <Navbar bg="light" as="header">
+            <Container as="nav">
                 <Link href="/" passHref>
                     <Navbar.Brand>
                         <Image
