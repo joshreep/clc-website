@@ -3,4 +3,46 @@
 
 footer {
     background-color: $footer-background;
+    color: $white;
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $green;
+            text-decoration: none;
+        }
+    }
+
+    address {
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li:not(:last-child) {
+                padding-bottom: map-get($spacers, 2);
+            }
+        }
+    }
+
+    nav {
+        ul.social {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                display: inline;
+
+                &:not(:last-child) {
+                    padding-right: map-get($spacers, 3);
+                }
+
+                @each $name, $color in $brand-colors {
+                    svg.fa-#{$name}:hover {
+                        color: $color;
+                    }
+                }
+            }
+        }
+    }
 }

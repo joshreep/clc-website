@@ -1,10 +1,22 @@
 // overrides
 $spacer: 1.5rem;
 
+// theme  colors
 $green: #639b51;
 $dark-green: darken($green, 15%);
 $yellow: #f4c44d;
 $white: #ffffff;
+
+// trademark brand colors
+$facebook: #3b5998;
+$twitter: #00acee;
+$instagram: #e1306c;
+
+$brand-colors: (
+    'facebook': $facebook,
+    'twitter': $twitter,
+    'instagram': $instagram
+);
 
 // bootstrap imports
 @import '../node_modules/bootstrap/scss/variables';
@@ -12,4 +24,4 @@ $white: #ffffff;
 // new variables
 $nav-color: $gray-600;
 
-$footer-background: $gray-300;
+$footer-background: $gray-800;
