@@ -1,13 +1,20 @@
-@import '~bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/mixins';
 @import 'variables';
 
-.navbar {
+header.navbar {
     a.nav-link,
     a.dropdown-item {
         color: $nav-color;
 
         &:hover {
             color: $green;
+        }
+    }
+
+    @include media-breakpoint-up('xs') {
+        .navbar-brand {
+            max-width: 75%;
         }
     }
 }

@@ -12,15 +12,15 @@ import 'styles/_topNav.scss'
 
 const TopNav = () => {
     return (
-        <Navbar bg="light" as="header">
+        <Navbar variant="light" bg="light" expand="lg" as="header" sticky="top">
             <Container as="nav">
                 <Link href="/" passHref>
                     <Navbar.Brand>
                         <Image
                             src="/logo-full.png"
-                            height="50"
                             alt="Covenant Life Church Logo"
                             className="d-inline-block align-top"
+                            height="50"
                         />
                     </Navbar.Brand>
                 </Link>
