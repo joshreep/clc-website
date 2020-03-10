@@ -4,6 +4,7 @@ import Head from 'next/head'
 import TopNav from 'components/TopNav'
 import Footer from 'components/Footer'
 
+import 'utilities/fontawesome'
 import 'styles/app.scss'
 
 class ClcApp extends App {
