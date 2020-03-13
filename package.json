@@ -8,7 +8,7 @@
         "build": "next build",
         "start": "next start",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "tsc --noEmit && eslint '*/*/*.{js,ts,tsx}' --quiet --fix"
+        "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
     },
     "keywords": [],
     "author": "Josh Reep",

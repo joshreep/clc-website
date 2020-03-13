@@ -1,4 +1,4 @@
-import React, { memo, useState, ReactNode } from 'react'
+import React, { useState, ReactNode } from 'react'
 
 import BSNavDropdown from 'react-bootstrap/NavDropdown'
 
