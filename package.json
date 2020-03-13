@@ -7,10 +7,11 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "tsc --noEmit && eslint '*/*/*.{js,ts,tsx}' --quiet --fix"
     },
     "keywords": [],
-    "author": "",
+    "author": "Josh Reep",
     "license": "ISC",
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.27",
@@ -28,11 +29,20 @@
     },
     "devDependencies": {
         "@types/bootstrap": "^4.3.1",
+        "@types/eslint": "^6.1.8",
+        "@types/eslint-plugin-prettier": "^2.2.0",
         "@types/node": "^13.7.1",
         "@types/node-sass": "^4.11.0",
         "@types/prettier": "^1.19.0",
         "@types/react": "^16.9.19",
         "@types/react-dom": "^16.9.5",
+        "@typescript-eslint/eslint-plugin": "^2.23.0",
+        "@typescript-eslint/parser": "^2.23.0",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.10.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "eslint-plugin-react": "^7.19.0",
+        "eslint-plugin-react-hooks": "^2.5.0",
         "prettier": "^1.19.1",
         "typescript": "^3.7.5"
     }
