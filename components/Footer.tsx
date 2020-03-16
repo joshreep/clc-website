@@ -60,7 +60,13 @@ const Footer = () => {
                                 ))}
                             </ul>
                         </Col>
-                        <Col></Col>
+                    </Row>
+                    <Row>
+                        <Col>
+                            <p className="text-center">
+                                <small>Copyright &copy; 2020 Covenant Life Church. All rights reserved.</small>
+                            </p>
+                        </Col>
                     </Row>
                 </Container>
             </div>
