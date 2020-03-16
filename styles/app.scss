@@ -13,7 +13,7 @@
 @import '~bootstrap/scss/grid';
 // @import "~bootstrap/scss/tables";
 // @import "~bootstrap/scss/forms";
-// @import "~bootstrap/scss/buttons";
+@import '~bootstrap/scss/buttons';
 @import '~bootstrap/scss/transitions';
 @import '~bootstrap/scss/dropdown';
 // @import "~bootstrap/scss/button-group";
@@ -35,7 +35,7 @@
 // @import "~bootstrap/scss/modal";
 // @import "~bootstrap/scss/tooltip";
 // @import "~bootstrap/scss/popover";
-// @import "~bootstrap/scss/carousel";
+// @import "~bootstrap/scss/carousel";  // this one is only used in the hero component. If we need it elsewhere perhaps it will makes sense to extract out of hero component.
 // @import "~bootstrap/scss/spinners";
 @import '~bootstrap/scss/utilities';
 // @import "~bootstrap/scss/print";
