@@ -1,5 +1,7 @@
 {
     "editor.formatOnSave": true,
+    "cSpell.words": ["overcomers"],
+    "cSpell.ignoreWords": ["rica"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
