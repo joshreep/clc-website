@@ -50,7 +50,7 @@ const TopNav = () => {
                     <Nav.Link href="https://tithe.ly/give_new/www/#/tithely/give-one-time/26957">Give</Nav.Link>
                     <Nav.Link href="https://covenantlifeonline.elvanto.net/login">Members</Nav.Link>
                     <Link href="/live" passHref>
-                        <Nav.Link>Live</Nav.Link>
+                        <Nav.Link>Live Stream</Nav.Link>
                     </Link>
                     <Link href="/camp" passHref>
                         <Nav.Link>Kids Camp</Nav.Link>

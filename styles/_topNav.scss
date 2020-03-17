@@ -6,6 +6,7 @@ header.navbar {
     a.nav-link,
     a.dropdown-item {
         color: $nav-color;
+        text-transform: uppercase;
 
         &:hover {
             color: $green;
