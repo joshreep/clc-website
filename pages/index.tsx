@@ -4,8 +4,6 @@ import { NextPage } from 'next'
 import Hero from 'components/Hero'
 import { HeroSlide } from 'types/Hero'
 
-interface Props {}
-
 const slides: HeroSlide[] = [
     {
         header: 'Life Together',
@@ -32,6 +30,8 @@ const slides: HeroSlide[] = [
         filter: true
     }
 ]
+
+interface Props {}
 
 const Index: NextPage<Props> = props => {
     return (
