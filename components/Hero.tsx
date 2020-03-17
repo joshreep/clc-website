@@ -31,13 +31,13 @@ const shouldShowIndicators = (singleHero: boolean, indicatorsProp: CarouselProps
 const renderHeader = ({ header }: HeroSlide) => {
     if (!header) return null
 
-    return <h2 className="display-4">{header}</h2>
+    return <h2 className="display-4 font-weight-bold">{header}</h2>
 }
 
 const renderSubHeader = ({ subHeader }: HeroSlide) => {
     if (!subHeader) return null
 
-    return <p>{subHeader}</p>
+    return <p className="lead">{subHeader}</p>
 }
 
 const renderButton = ({ button }: HeroSlide) => {
