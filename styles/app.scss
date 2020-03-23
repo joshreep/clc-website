@@ -5,7 +5,7 @@
 
 // bootstrap modules - only import the ones we need to use
 // others remain intact but comment out so we can reduce the file size
-// @import '~bootstrap/scss/root';
+@import '~bootstrap/scss/root';
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/type';
 @import '~bootstrap/scss/images';

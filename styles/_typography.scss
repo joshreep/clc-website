@@ -16,3 +16,27 @@ h6,
         border-bottom: 3px solid $green;
     }
 }
+
+@each $color, $value in $colors {
+    @include text-emphasis-variant('.text-#{$color}', $value, true);
+    @include bg-variant('.bg-#{$color}', $value, true);
+}
+
+a.icon-circle-link {
+    border-color: $gray-300;
+    border-width: 0.6rem;
+    border-style: solid;
+    height: 9rem;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: map-get($spacers, 3);
+    border-radius: 50%;
+
+    @each $name, $color in $colors {
+        &.border-#{$name}:hover {
+            border-color: $color;
+        }
+    }
+}
