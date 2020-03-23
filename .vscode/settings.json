@@ -1,7 +1,11 @@
 {
     "editor.formatOnSave": true,
     "cSpell.words": ["overcomers"],
-    "cSpell.ignoreWords": ["rica"],
+    "cSpell.ignoreWords": [
+        "fontawesome",
+        "fortawesome",
+        "rica"
+    ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
