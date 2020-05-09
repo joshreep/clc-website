@@ -7,7 +7,7 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest",
         "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
     },
     "keywords": [],
@@ -31,6 +31,7 @@
         "@types/bootstrap": "^4.3.1",
         "@types/eslint": "^6.1.8",
         "@types/eslint-plugin-prettier": "^2.2.0",
+        "@types/jest": "^25.1.4",
         "@types/node": "^13.7.1",
         "@types/node-sass": "^4.11.0",
         "@types/prettier": "^1.19.0",
@@ -44,13 +45,15 @@
         "eslint-plugin-react": "^7.19.0",
         "eslint-plugin-react-hooks": "^2.5.0",
         "husky": "^4.2.3",
+        "jest": "^25.1.0",
         "lint-staged": "^10.0.8",
         "prettier": "^1.19.1",
-        "typescript": "^3.7.5"
+        "ts-jest": "^25.2.1",
+        "typescript": "^3.8.3"
     },
     "husky": {
         "hooks": {
-            "pre-commit": "tsc --noEmit && lint-staged"
+            "pre-commit": "tsc --noEmit && lint-staged && jest"
         }
     },
     "lint-staged": {
