@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container'
 
 interface Props {}
 
-const LiveStreamPage: NextPage<Props> = props => {
+const LiveStreamPage: NextPage<Props> = () => {
     return (
         <Container className="my-5" as="article">
             <h1>

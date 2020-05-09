@@ -7,8 +7,6 @@ import Row from 'react-bootstrap/Row'
 
 import BigIconLink from 'components/BigIconLink'
 import Hero from 'components/Hero'
-import Icon from 'components/Icon'
-import Link from 'components/Link'
 
 import { HeroSlide } from 'types/Hero'
 
