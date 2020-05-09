@@ -13,12 +13,13 @@
             "jsx": true
         }
     },
-    "plugins": ["react-hooks"],
+    "plugins": ["react-hooks", "no-only-tests"],
     "rules": {
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/no-empty-interface": "off"
+        "@typescript-eslint/no-empty-interface": "off",
+        "no-only-tests/no-only-tests": "error"
     },
     "settings": {
         "react": {
