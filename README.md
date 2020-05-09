@@ -22,3 +22,7 @@ Typescript does need to compile which is a double edged sword in this case. It i
 ## Next.js
 
 We use [Next.js](https://nextjs.org/learn/basics/getting-started) to handle server side rendering as well as our api.
+
+## Testing
+
+We use [Jest](https://jestjs.io/) as our test runner. The rule is, if there's no test, it's broken. In order to insure that all code is covered, we put tests in the same directory as the code. For example, if you have a component named `FooBar.tsx`, in the same directory, you should have a `FooBar.test.tsx`. This way you don't have to hunt down the tests in another directory, and it's easy to see that a file does have a test as it should. Try and cover as many of the branches as you can. I'd rather too much coverage than skip something important.
