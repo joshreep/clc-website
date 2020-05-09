@@ -1,25 +1,26 @@
 {
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "cSpell.words": ["overcomers"],
-    "cSpell.ignoreWords": [
-        "fontawesome",
-        "fortawesome",
-        "rica"
-    ],
+    "cSpell.ignoreWords": ["fontawesome", "fortawesome", "rica"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
     "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
     "[javascript]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[javascriptreact]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescript]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[typescriptreact]": {
-        "editor.formatOnSave": false
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
