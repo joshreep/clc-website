@@ -20,6 +20,7 @@
         "react-hooks/exhaustive-deps": "warn",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/no-use-before-define": "off",
         "no-only-tests/no-only-tests": "error"
     },
     "settings": {

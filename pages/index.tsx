@@ -8,6 +8,8 @@ import Row from 'react-bootstrap/Row'
 import BigIconLink from 'components/BigIconLink'
 import Hero from 'components/Hero'
 
+import MainLayout from 'layout/MainLayout'
+
 import { HeroSlide } from 'types/Hero'
 
 const slides: HeroSlide[] = [
@@ -17,7 +19,7 @@ const slides: HeroSlide[] = [
         img: { src: '/hero/james_and_girl.jpg', xPosition: 50, yPosition: 30 },
         position: 'center',
         button: { label: 'Learn More', variant: 'warning', href: '/about' },
-        filter: true
+        filter: true,
     },
     {
         header: 'Life Together',
@@ -25,7 +27,7 @@ const slides: HeroSlide[] = [
         img: { src: '/hero/camp_overcomers.jpg', xPosition: 15, yPosition: 15 },
         position: 'center',
         button: { label: 'Learn More', variant: 'warning', href: '/about' },
-        filter: true
+        filter: true,
     },
     {
         header: 'Life Together',
@@ -33,15 +35,15 @@ const slides: HeroSlide[] = [
         img: { src: '/hero/costa_rica.jpg', xPosition: 57, yPosition: 25 },
         position: 'center',
         button: { label: 'Learn More', variant: 'warning', href: '/about' },
-        filter: true
-    }
+        filter: true,
+    },
 ]
 
 interface Props {}
 
 const Index: NextPage<Props> = ({}) => {
     return (
-        <>
+        <MainLayout>
             <Hero slides={slides} interval={5000} fade height="400px" textAlign={'center'} />
             <Container className="my-5 text-center">
                 <Row>
@@ -98,7 +100,7 @@ const Index: NextPage<Props> = ({}) => {
                     </Row>
                 </Container>
             </div>
-        </>
+        </MainLayout>
     )
 }
 

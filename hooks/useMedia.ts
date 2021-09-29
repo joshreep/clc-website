@@ -10,6 +10,12 @@ enum breakPoints {
 
 const breakPointsArray = Object.values(breakPoints)
 
+/**
+ * This hook makes it super easy to utilize media queries in your component logic
+ * @param values a list of values that map to the list of queries
+ * @param defaultValue value to be returned if no other value can be computed
+ * @param queries a list of media queries that map to the list of values
+ */
 export default function useMedia<T>(values: T[], defaultValue: T, queries: string[] = breakPointsArray) {
     const mediaQueryLists = queries.map((query) => window.matchMedia(query))
 

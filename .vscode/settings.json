@@ -1,7 +1,11 @@
 {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "cSpell.words": ["overcomers"],
+    "cSpell.words": [
+        "firestore",
+        "overcomers",
+        "unmount"
+    ],
     "cSpell.ignoreWords": ["fontawesome", "fortawesome", "rica"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true

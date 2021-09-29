@@ -4,6 +4,7 @@ const path = require('path')
 const withSass = require('@zeit/next-sass')
 
 module.exports = withSass({
+    distDir: 'dist',
     webpack(config) {
         config.resolve.alias['api'] = path.join(__dirname, 'api')
         config.resolve.alias['components'] = path.join(__dirname, 'components')
@@ -17,5 +18,5 @@ module.exports = withSass({
         config.resolve.alias['src'] = path.join(__dirname)
 
         return config
-    }
+    },
 })

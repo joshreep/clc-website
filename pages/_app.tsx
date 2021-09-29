@@ -1,12 +1,24 @@
 import React from 'react'
 import App from 'next/app'
 import Head from 'next/head'
+import firebase from 'firebase'
 
 import TopNav from 'components/TopNav'
 import Footer from 'components/Footer'
 
 import 'utilities/fontawesome'
 import 'styles/app.scss'
+
+const firebaseConfig = {
+    apiKey: 'AIzaSyCBlFTACCEVCfCA0OAdtLdrGCTxjF9c6Gg',
+    authDomain: 'clc-website-269715.firebaseapp.com',
+    databaseURL: 'https://clc-website-269715.firebaseio.com',
+    projectId: 'clc-website-269715',
+    storageBucket: 'clc-website-269715.appspot.com',
+    messagingSenderId: '209031350278',
+    appId: '1:209031350278:web:656cf999102d40823ddb87',
+}
+// firebase.initializeApp({})
 
 class ClcApp extends App {
     render() {
@@ -22,11 +34,7 @@ class ClcApp extends App {
                     <link rel="icon" href="/icon.png" sizes="192x192" />
                     <title>Covenant Life Church</title>
                 </Head>
-                <TopNav />
-                <main>
-                    <Component {...pageProps} />
-                </main>
-                <Footer />
+                <Component {...pageProps} />
             </div>
         )
     }
